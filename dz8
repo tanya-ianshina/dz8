@@ -1,0 +1,13 @@
+import random
+
+def rand_string_nucleotide(length, char_set= ['A', 'T', 'G', 'C', 'U']):
+    lenght = int(input())
+    return ''.join( random.choice(char_set) for _ in range(length) )
+
+def rand_string_dezoxinucleotide(length, char_set= ['A', 'T', 'G', 'C']):
+    lenght = int(input())
+    return ''.join( random.choice(char_set) for _ in range(length) )
+
+def rand_string_ak(length, char_set= ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']):
+    lenght = int(input())
+    return ''.join( random.choice(char_set) for _ in range(length) )
